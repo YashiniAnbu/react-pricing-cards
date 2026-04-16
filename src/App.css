@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container{
+    background: linear-gradient(to right, #1e63d5, #4f8df5);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.card{
+    background: #fff;
+    width: 280px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.card h2{
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.card h4{
+  text-align: center;
+  color: grey;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  transition: transform 0.3s ease;
+}
+
+ul{
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.button {
+  background: linear-gradient(to right, #1e63d5, #4f8df5);
+  width: 100%;
+  color: white;
+  border: none;
+  border-radius: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 12px;
+}
+
+.button:hover {
+   opacity: 0.8;
+}
+
+.true{
+color: rgb(72, 71, 71)
+}
+
+.false{
+  color: grey;
+}
+
+@media (max-width: 682px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        
+        padding: 20px;
+        gap: 12px;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 360px;
+    }
+}
+
